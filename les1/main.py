@@ -130,7 +130,8 @@
 #print('ещё' in text) # True
 #print(text.lower()) # съешь ещё этих мягких французских булок
 #print(text.upper()) # СЪЕШЬ ЕЩЁ ЭТИХ МЯГКИХ ФРАНЦУЗСКИХ БУЛОК
-#print(text.replace('ещё','ЕЩЁ')) # СъЕШЬ ЕЩЁ этих МяГкИх французских булок
+#print(text.replace('ещё',
+# 'ЕЩЁ')) # СъЕШЬ ЕЩЁ этих МяГкИх французских булок
 
 #text = 'съешь ещё этих мягких французских булок'
 # print(text[0]) # c
@@ -145,3 +146,16 @@
 # print(text[0:len(text):6]) # сеикакл
 # print(text[::6]) # сеикакл
 #text = text[2:9] + text[-5] + text[:2] # ...
+
+n = 100
+
+# Введите ваше решение ниже
+def sum_of_digits(n):
+    hundreds = n // 100
+    tens = (n // 10) % 10
+    units = n % 10
+    res = hundreds + tens + units
+    return res
+
+res = sum_of_digits(n)
+print(res)  
